@@ -29,8 +29,8 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .intro-message {
 	position: relative;
-	padding-top: 20%;
-	padding-bottom: 20%;
+	padding-top: 12%;
+	padding-bottom: 12%;
 }
 
 .intro-message > h1 {
@@ -39,14 +39,14 @@ body, h1, h2, h3, h4, h5, h6 {
 	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
+.intro-message > h3 {
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
 .intro-divider {
 	width: 400px;
 	border-top: 1px solid #f8f8f8;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.intro-message > h3 {
-	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 @media (max-width: 767px) {
@@ -81,11 +81,14 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .content-section-a {
-	background-color: #f8f8f8;
+	background-color: #1F78D2;
+	color: white;
 	padding: 50px 0;
 }
 
 .content-section-b {
+	background-color: white;
+	color: #1F78D2;
 	border-top: 1px solid #e7e7e7;
 	border-bottom: 1px solid #e7e7e7;
 	padding: 50px 0;
@@ -96,7 +99,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .section-heading-spacer {
-	border-top: 3px solid #e7e7e7;
+	border-top: 3px solid rgba(231, 231, 231, 0.5);
 	width: 200px;
 	float: left;
 }
@@ -123,6 +126,37 @@ body, h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
 }
 
+.btn-default, .btn-primary {
+	margin: 10px;
+	color: #fff;
+	background-color: #1F78D2;
+	border-color: #fff;
+	border: solid 1px #1F78D2;
+	border-radius: 0px;
+}
+
+.btn-default:hover, .btn-primary:hover {
+	color: #1F78D2;
+	background: #fff;
+	border-color: #1F78D2;
+}
+
+.form-control {
+	border: none;
+	border-radius: 0;
+}
+
+.modal-content {
+	border: none;
+	border-radius: 0;
+}
+
+label {
+margin-top: 5px;
+margin-bottom: 1px;
+font-weight: inherit;
+}
+
 @media (max-width: 1199px) {
 	ul.banner-social-buttons {
 		float: left;
@@ -146,14 +180,42 @@ body, h1, h2, h3, h4, h5, h6 {
 	ul.banner-social-buttons > li:last-child {
 		margin-bottom: 0;
 	}	
-}
+	
+	.intro-message {
+		padding-bottom: 15%;
+	}
+
+	.intro-message > h1 {
+		font-size: 3em;
+	}
+
+	ul.intro-audience-buttons > li {
+		display: block;
+		margin-bottom: 20px;
+		padding: 0;
+	}
+
+	ul.intro-audience-buttons > li:last-child {
+		margin-bottom: 0;
+	}
+
+	.intro-divider {
+		width: 100%;
+	}
+}	
 
 footer {
 	background-color: #f8f8f8;
 	padding: 5px 5px;
 }
 
+.audience {
+	font-size: 16px;
+	font-weight: 500;
+}
+
 p.copyright {
+	text-align: center;
 	margin: 15px 0 0;
 }
 
@@ -161,3 +223,117 @@ p.copyright {
 	max-height: 200px;
 	border: solid 1px #f8f8f8;
 }
+
+/* LANDING PAGE */
+/* ============================== */
+.landing-brand {
+	background: url(../img/cocurrilogo4.png) no-repeat;
+	height: 50px;
+	width: 300px;
+	background-size: contain;
+	position: absolute;
+	margin-top: 14px;
+}
+
+.landing-nav {
+	position: fixed;
+	width: 30px;
+	height: 84px;
+	z-index: 100;
+	right: 0;
+	top: 50%;
+	margin-top: -42px; 
+}
+  
+.landing-nav a {
+    text-indent: -9999px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: rgba(245, 246, 247, 0.4);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s; 
+}
+.landing-nav a:hover {
+  background: #f5f6f7;
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -ms-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s; 
+}
+
+.landing-intro-header {
+	color: #FFFFFF;
+	background:#1F78D2 url("http://unsplash.s3.amazonaws.com/batch%2011/converse-fields.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.landing-intro-message {
+	padding-top: 10%;
+}
+
+.landing-intro-message > h1 {
+	font-size: 4em;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.landing-intro-message > h3 {
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.landing-intro-divider {
+	width: 50%;
+}
+
+#bottom-signup {
+	background: #ffffff;
+	color: #1F78D2;
+	text-align: center;
+}
+
+#bottom-signup .intro-divider {
+	border-top: 1px #1F78D2 solid;
+	border-bottom: none;
+}
+
+#bottom-signup .form-control {
+	background: #1F78D2;
+	color: #FFFFFF;
+}
+
+#bottom-signup .form-control:-moz-placeholder {
+  color: #DBDBDB;
+}
+
+#bottom-signup .form-control::-moz-placeholder {
+  color: #DBDBDB;
+  opacity: 1;
+}
+
+#bottom-signup .form-control:-ms-input-placeholder {
+  color: #DBDBDB;
+}
+
+#bottom-signup .form-control::-webkit-input-placeholder {
+  color: #DBDBDB;
+}
+
+#bottom-signup .btn-default, .btn-primary {
+	margin-top: 10px;
+}
+
+#bottom-signup .btn-default:hover, .btn-primary:hover {
+	color: #1F78D2;
+	background: #fff;
+	border: 1px #1F78D2 solid;
+}
+
+/* ============================== */

@@ -2,12 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CoCurri is a simple online tool that manages school clubs and events.">
-    <meta name="author" content="GlowTouch Technologies, Louisville, KY">
 
-    <title>CoCurri - Simplify life after the bell</title>
+
+    <title>CoCurri - An Easy Way to Manage Co-Curricular School Activities</title>
+    <meta charset="utf-8">
+    <meta name="description" content="CoCurri is an innovative tool to help schools manage cocurricular activities and enhance the student experience outside the class curriculum.">
+    <meta name="author" content="GlowTouch Technologies">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:type"        content="website"/>
+    <meta property="og:site_name"   content="CoCurri"/>
+    <meta property="og:image"       content="img/icons/app-200x200.png"/>
+    <meta property="og:title"       content="CoCurri"/>
+    <meta property="og:description" content="CoCurri is an innovative tool to help schools manage cocurricular activities and enhance the student experience outside the class curriculum."/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@cocurriapp">
+    <meta name="twitter:title" content="CoCurri - Supporting Co-Curricular Achievement">
+    <meta name="twitter:description" content="CoCurri is an innovative tool to help schools manage cocurricular activities and enhance the student experience outside the class curriculum.">
+    <meta name="twitter:image" content="img/twitter-card.png"/>
+
+        
+    <link id="favicon" rel="shortcut icon" href="img/icons/favicon-32.png" sizes="16x16 32x32 48x48" type="image/png" />
+
+    <link rel="icon" href="img/icons/app-256.png" sizes="256x256" type="image/png" />
+
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/icons/ios-152.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/icons/ios-144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/icons/ios-120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/ios-114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/ios-72.png" />
+    <link rel="apple-touch-icon-precomposed" href="img/icons/ios-57.png" />
+
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="img/icons/app-144.png" />
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -18,8 +46,6 @@
 
     <!-- Custom CSS here -->
     <link href="css/base.css" rel="stylesheet">
-    <link href="css/landing-page.css" rel="stylesheet">
-
 
 </head>
 
@@ -27,28 +53,18 @@
 
     <div class="row">
         <div class="col-md-4 col-md-offset-2">
-            <a class="brand" href="http://www.cocurri.com/landing"></a>
+            <a class="brand landing-brand" href="http://www.cocurri.com/landing"></a>
         </div>
     </div>
 
-    
-    <!-- Disable Background Video --
-    <div class="header-unit visible-lg">
-        <div id="video-container">
-            <video autoplay loop class="fillWidth">
-            <source src="img/TestVideo.mp4" type="video/mp4"/>
-        </div>
-    </div>
-    <!-- End background video -->
-
-    <div class="nav">
+    <div class="nav landing-nav">
         <a href="#top" class="scroll">Home</a>
         <a href="#admins" class="scroll">School Administrators</a>
         <a href="#teachers" class="scroll">Teachers</a>
         <a href="#parents" class="scroll">Parents & Students</a>
     </div>
 
-    <div class="intro-header" id="top">
+    <div class="intro-header landing-intro-header" id="top">
 
             <div class="row">
                 <div class="col-lg-12">
@@ -58,15 +74,7 @@
                         <hr class="intro-divider">
                         <form class="form" role="form" id="landing-top">
                             <div class="form-group">
-                                <div class="col-sm-4 form-group col-sm-offset-2">
-                                    <label class="sr-only" for="principalName">Principal's Name:</label>
-                                    <input type="text" class="form-control" id="principalName" placeholder="principal's name" required>
-                                    <label class="sr-only" for="schoolName">School Name:</label>
-                                    <input type="text" class="form-control" id="schoolName" placeholder="school name" required>
-                                    <label class="sr-only" for="schoolLocation">School City, State:</label>
-                                    <input type="text" class="form-control" id="schoolLocation" placeholder="city, st" required>
-                                </div>
-                                <div class="col-sm-4 form-group">
+                                <div class="form-inline">
                                     <label class="sr-only" for="userName">Your Name:</label>
                                     <input type="text" class="form-control" id="userName" placeholder="your name (first and last)" required>
                                     <label class="sr-only" for="email">E-mail Addres:</label>
@@ -80,7 +88,7 @@
                                     </select>
                                 </div>
                                 <div class="row col-sm-6 form-group col-sm-offset-3">
-                                    <button type="submit" class="btn btn-default btn-lg">Send my school more information!</button>
+                                    <button type="submit" class="btn btn-default">Send my school more information!</button>
                                 </div>
                             </div>
                         </form>
